@@ -15,41 +15,7 @@ public class Product {
         this.name = name;
         this.unitCost = unitCost;
     }
-
-    public double getTotalDiscount(double qty) {
-        // get a total of all discounts for this Product
-        double totalDiscount = 0.0;
-        for(DiscountStrategy discount : discounts) {
-            discount.setQuanitiy(qty);
-            discount.setPrice(getUnitCost());
-            totalDiscount += discount.getDiscount();
-        }
-        return totalDiscount;
-    }
-
-    public void addDiscount(DiscountStrategy discount) {
-        DiscountStrategy[] temp = new DiscountStrategy[discounts.length + 1];
-        System.arraycopy(discounts, 0, temp, 0, discounts.length);
-        temp[temp.length-1] = discount;
-        discounts = temp;
-    }
-
-    public void removeDiscount(DiscountStrategy discount) {
-        DiscountStrategy[] temp = new DiscountStrategy[discounts.length - 1];
-
-        for(int i=0, j=0; j < discounts.length; i++, j++) {
-            if(discounts[j].toString().equals(discount.toString())) {
-                // skip it, but decrement the counter first
-                --i;
-            } else {
-                // copy it
-                temp[i] = discounts[j];
-            }
-        }
-
-        discounts = temp;
-    }
-
+    
     public DiscountStrategy[] getDiscounts() {
         return discounts;
     }
