@@ -14,8 +14,6 @@ public interface DiscountStrategy {
 
     void setRate(double baseRate);
 
-    void setMin(double min);
-
     void setPrice(double price);
 
     void setQuanitiy(double qty);
