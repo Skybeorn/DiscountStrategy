@@ -1,7 +1,7 @@
 package discountstrat;
 
 public class ArrayInfo {
-    public static final Product[] products = new Product[3];
+    public static final Product[] products = new Product[2];
     public static final Customer[] customers = new Customer[2];
 
     static {
@@ -11,9 +11,6 @@ public class ArrayInfo {
         products[1] = new Product("1002", "Bread", 20.00);
         products[1].addDiscount(new XmasDiscount());
         products[1].addDiscount(new QuantityDiscount());
-
-        products[2] = new Product("1003", "Rubber Duck", 10.00);
-        products[2].addDiscount(new NoDiscount());
 
         customers[0] = new Customer("Brown", "Andy", "01");
         customers[1] = new Customer("Lowe", "Jenny", "02");
