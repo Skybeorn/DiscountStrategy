@@ -41,6 +41,7 @@ public class LineItem {
 
     //FindProduct Method
     private Product findProduct(String productId) {
+        //Logic not determined yet
         return product;
     }
 }
