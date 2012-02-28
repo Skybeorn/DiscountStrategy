@@ -6,8 +6,6 @@ public interface DiscountStrategy {
 
     double getDiscount();
 
-    double getMin();
-
     double getPrice();
 
     double getQuanitiy();
