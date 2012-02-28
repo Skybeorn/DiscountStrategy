@@ -15,11 +15,11 @@ public class Customer {
     }
     
     //Getters and Setters
-    public String getAccountNo() {
+    public String getAccountId() {
         return accountNo;
     }
 
-    public void setAccountNo(String accountNo) {
+    public void setAccountId(String accountNo) {
         this.accountNo = accountNo;
     }
 
@@ -37,10 +37,5 @@ public class Customer {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public String toString() {
-        return firstName + " " + lastName + "\n"
-                + "Account No: " + accountNo;
     }
 }
