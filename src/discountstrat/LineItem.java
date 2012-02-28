@@ -15,13 +15,6 @@ public class LineItem {
     }
 
     //Getters and Setters
-    public double getTotalDiscount() {
-        return product.getTotalDiscount(qty);
-    }
-
-    public double getLineItemTotal() {
-        return product.getUnitCost() * qty - getTotalDiscount();
-    }
 
     public Product getProduct() {
         return product;
