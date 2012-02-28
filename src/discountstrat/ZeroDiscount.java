@@ -1,6 +1,6 @@
 package discountstrat;
 
-public class NoDiscount implements DiscountStrategy {
+public class ZeroDiscount implements DiscountStrategy {
     private double baseRate;
     private double price;
     private double qty;

@@ -13,52 +13,39 @@ public class QuantityDiscount implements DiscountStrategy {
     private double baseRate = 0.10;
     private double price;
     private double qty;
-    private double min = 5;
+    double discount;
 
-    public double getDiscount() {
-        double discount = 0;
-
-        if(qty >= getMin()) {
-            discount = baseRate * price * qty;
-        }
-        return discount;
-    }
-
+    
+    
+    //getters and Setters
+    @Override
     public double getRate() {
         return baseRate;
     }
-
+    @Override
     public void setRate(double baseRate) {
         this.baseRate = baseRate;
     }
 
+    @Override
     public double getPrice() {
         return price;
     }
-
+    @Override
     public void setPrice(double price) {
         this.price = price;
     }
-
+    @Override
     public double getQuanitiy() {
         return qty;
     }
-
+    @Override
     public void setQuanitiy(double qty) {
         this.qty = qty;
     }
 
-    public double getMin() {
-        return min;
-    }
-
-    public void setMin(double min) {
-        this.min = min;
-    }
-
-
-
-    public String toString() {
-        return "Quantity Discount";
+    @Override
+    public double getDiscount() {
+        return discount;
     }
 }

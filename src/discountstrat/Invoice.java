@@ -14,9 +14,5 @@ public class Invoice {
     }
 
     void addLineItem(String productId, double qty) {
-        throw new UnsupportedOperationException("Not yet implemented");
     }
-    
-
-
 }

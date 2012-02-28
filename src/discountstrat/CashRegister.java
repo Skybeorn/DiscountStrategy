@@ -5,8 +5,8 @@ public class CashRegister {
 
     private Invoice invoice;
 
-    public void startNewSale(String customerActNo) {
-        invoice = new Invoice(customerActNo);
+    public void startNewSale(String customerId) {
+        invoice = new Invoice(customerId);
     }
 
     public void addNewLineItem(String productId, double qty) {

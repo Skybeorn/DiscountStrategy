@@ -1,12 +1,7 @@
 package discountstrat;
 
-/**
- * This class simulates a product. Note that it stores all discounts applied
- * to it internally in an array. We can add or remove discounts at will.
- *
- * @author jlombardo
- */
 public class Product {
+    
     private String id;
     private String name;
     private double unitCost;

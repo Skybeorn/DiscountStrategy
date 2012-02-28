@@ -6,10 +6,10 @@ public class ArrayInfo {
 
     static {
         products[0] = new Product("1001", "Cereal", 30.00);
-        products[0].addDiscount(new XmasDiscount());
+        products[0].addDiscount(new ZeroDiscount());
 
         products[1] = new Product("1002", "Bread", 20.00);
-        products[1].addDiscount(new XmasDiscount());
+        products[1].addDiscount(new ZeroDiscount());
         products[1].addDiscount(new QuantityDiscount());
 
         customers[0] = new Customer("Brown", "Andy", "01");

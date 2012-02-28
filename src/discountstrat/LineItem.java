@@ -9,8 +9,8 @@ public class LineItem {
     private double qty;
     
     //Constructor for the LineItem
-    public LineItem(String prodId, double qty) {
-        this.product = findProduct(prodId);
+    public LineItem(String productId, double qty) {
+        this.product = findProduct(productId);
         this.qty = qty;
     }
 
