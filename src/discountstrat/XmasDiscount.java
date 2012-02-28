@@ -20,11 +20,11 @@ public class XmasDiscount implements DiscountStrategy {
         return baseRate * qty * getPrice();
     }
 
-    public double getBaseRate() {
+    public double getRate() {
         return baseRate;
     }
 
-    public void setBaseRate(double baseRate) {
+    public void setRate(double baseRate) {
         this.baseRate = baseRate;
     }
 
@@ -36,11 +36,11 @@ public class XmasDiscount implements DiscountStrategy {
         this.price = price;
     }
 
-    public double getQty() {
+    public double getQuanitiy() {
         return qty;
     }
 
-    public void setQty(double qty) {
+    public void setQuanitiy(double qty) {
         this.qty = qty;
     }
 
@@ -67,9 +67,9 @@ public class XmasDiscount implements DiscountStrategy {
 
     public static void main(String[] args) {
         DiscountStrategy discount = new XmasDiscount();
-        discount.setBaseRate(.10);
+        discount.setRate(.10);
         discount.setPrice(25.00);
-        discount.setQty(20);
+        discount.setQuanitiy(20);
         
         double amt = discount.getDiscount();
         System.out.println("The discount is: " + amt);        

@@ -1,16 +1,8 @@
 package discountstrat;
 
-/**
- * This is the general contract for all DiscountStrategy implementations.
- * Note that the job of a DiscountStrategy is to provide the calculated
- * discount. To do that we have to assume certain values are availalbe such
- * as qty, price and minimum qty for quantity discount.
- *
- * @author jlombardo
- */
 public interface DiscountStrategy {
 
-    double getBaseRate();
+    double getRate();
 
     double getDiscount();
 
@@ -18,16 +10,15 @@ public interface DiscountStrategy {
 
     double getPrice();
 
-    double getQty();
+    double getQuanitiy();
 
-    void setBaseRate(double baseRate);
+    void setRate(double baseRate);
 
     void setMin(double min);
 
     void setPrice(double price);
 
-    void setQty(double qty);
+    void setQuanitiy(double qty);
 
-    String toString();
 
 }

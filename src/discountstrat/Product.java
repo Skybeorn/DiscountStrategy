@@ -25,7 +25,7 @@ public class Product {
         // get a total of all discounts for this Product
         double totalDiscount = 0.0;
         for(DiscountStrategy discount : discounts) {
-            discount.setQty(qty);
+            discount.setQuanitiy(qty);
             discount.setPrice(getUnitCost());
             totalDiscount += discount.getDiscount();
         }

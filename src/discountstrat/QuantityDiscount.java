@@ -24,11 +24,11 @@ public class QuantityDiscount implements DiscountStrategy {
         return discount;
     }
 
-    public double getBaseRate() {
+    public double getRate() {
         return baseRate;
     }
 
-    public void setBaseRate(double baseRate) {
+    public void setRate(double baseRate) {
         this.baseRate = baseRate;
     }
 
@@ -40,11 +40,11 @@ public class QuantityDiscount implements DiscountStrategy {
         this.price = price;
     }
 
-    public double getQty() {
+    public double getQuanitiy() {
         return qty;
     }
 
-    public void setQty(double qty) {
+    public void setQuanitiy(double qty) {
         this.qty = qty;
     }
 

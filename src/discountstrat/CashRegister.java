@@ -1,6 +1,5 @@
 package discountstrat;
 
-import DiscountStrategy.Invoice;
 
 public class CashRegister {
 
