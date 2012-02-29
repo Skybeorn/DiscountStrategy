@@ -1,21 +1,13 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package discountstrat;
 
-/**
- *
- * @author Instlogin
- */
+
 public class QuantityDiscount implements DiscountStrategy {
     private double baseRate = 0.10;
     private double price;
     private double qty;
     double discount;
 
-    
     
     //getters and Setters
     @Override

@@ -15,14 +15,6 @@ public class Product {
         this.name = name;
         this.unitCost = unitCost;
     }
-    
-    public DiscountStrategy[] getDiscounts() {
-        return discounts;
-    }
-
-    public void setDiscounts(DiscountStrategy[] discounts) {
-        this.discounts = discounts;
-    }
 
     public String getId() {
         return id;
@@ -48,7 +40,4 @@ public class Product {
         this.unitCost = unitCost;
     }
 
-    public String toString() {
-        return id + ", " + name + ", " + unitCost;
-    }
 }
