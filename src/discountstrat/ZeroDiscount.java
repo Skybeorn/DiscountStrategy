@@ -3,41 +3,33 @@ package discountstrat;
 public class ZeroDiscount implements DiscountStrategy {
 
     private double baseRate;
-    private double price;
-    private double qty;
+//    private double price;
+//    private double qty;
 
     @Override
-    public double getRate() {
+    public double getBaseRate() {
         return baseRate;
     }
 
     @Override
-    public double getDiscount() {
+    public double getDiscountAmt(double qty, double price) {
         return 0;
     }
 
     @Override
-    public double getPrice() {
-        return price;
+    public double getMinQty() {
+        return 0;
     }
 
     @Override
-    public double getQuanitiy() {
-        return qty;
+    public void setMinQty(double minQty) {
+        
     }
 
     @Override
-    public void setRate(double baseRate) {
-        this.baseRate = baseRate;
+    public void setBaseRate(double rate) {
+        baseRate = rate;
     }
 
-    @Override
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    @Override
-    public void setQuanitiy(double qty) {
-        this.qty = qty;
-    }
+    // add test code
 }

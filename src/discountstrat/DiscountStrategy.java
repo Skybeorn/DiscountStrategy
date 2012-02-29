@@ -2,19 +2,19 @@ package discountstrat;
 
 public interface DiscountStrategy {
 
-    double getRate();
+    double getBaseRate();
 
-    double getDiscount();
+    double getDiscountAmt(double qty, double price);
 
-    double getPrice();
+    double getMinQty();
 
-    double getQuanitiy();
+    void setMinQty(double minQty);
 
-    void setRate(double baseRate);
+    void setBaseRate(double baseRate);
 
-    void setPrice(double price);
-
-    void setQuanitiy(double qty);
+//    void setPrice(double price);
+//
+//    void setQuanitiy(double qty);
 
 
 }

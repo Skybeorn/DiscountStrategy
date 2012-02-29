@@ -1,16 +1,14 @@
 package discountstrat;
 
-import discountstrat.CashRegister;
-
 public class StartDemo {
     public static void main(String[] args) {
         
         CashRegister cr = new CashRegister();
 
-        cr.startNewSale("1234");
+        cr.startNewSale("100");
         cr.addNewLineItem("A100", 2);
-        cr.addNewLineItem("B321", 9);
-        cr.addNewLineItem("C444", 1);
+        cr.addNewLineItem("B100", 9);
+        cr.addNewLineItem("C100", 1);
 
         cr.displayInvoice();
         

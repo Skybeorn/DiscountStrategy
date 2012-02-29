@@ -14,6 +14,6 @@ public class CashRegister {
     }
 
     public void displayInvoice() {
-        System.out.println();
+        System.out.println(invoice.getInvoiceDataAsString());
     }
 }
