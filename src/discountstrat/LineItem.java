@@ -3,13 +3,11 @@ package discountstrat;
 
 public class LineItem {
     
-    //Fields For a LineItem, A line item is a product, and that lineItem
-    //has a QTY  of that product.
+
     private Product product;
     private double qty;
     private Product[] productDb;
     
-    //Constructor for the LineItem
     public LineItem(String productId, double qty) {
         // To be removed in future when we switch to a database
         productDb = new Product[3];
