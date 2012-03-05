@@ -42,9 +42,3 @@ public class ZeroDiscount implements DiscountStrategy {
         }
     }
 }
-        
-        
-    
-  
-   
-}
