@@ -23,7 +23,6 @@ public class ZeroDiscount implements DiscountStrategy {
 
     @Override
     public void setMinQty(double minQty) {
-        
     }
 
     @Override
@@ -32,4 +31,20 @@ public class ZeroDiscount implements DiscountStrategy {
     }
 
     // add test code
+    public static void main(String[] args) {
+        DiscountStrategy ds = new ZeroDiscount();
+        double discount = ds.getDiscountAmt(5, 1.50);
+
+        if (discount == 0) {
+            System.out.println("Winner");
+        } else {
+            System.out.println("Fail");
+        }
+    }
+}
+        
+        
+    
+  
+   
 }
